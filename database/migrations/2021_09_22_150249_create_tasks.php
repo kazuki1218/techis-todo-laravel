@@ -8,10 +8,11 @@ class CreateTasks extends Migration
 {
     /**
      * Run the migrations.
-     *
+     * @param $name
+     * @
      * @return void
      */
-    public function up()
+    public function up(): void
     {
         Schema::create('tasks', function (Blueprint $table) {
             $table->increments(('id'));
